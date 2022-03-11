@@ -1,0 +1,11 @@
+<div class="topnav" >
+  <div class="topnav-left">
+  <a routerLink="/jobs">Jobs</a>
+  </div>
+  <div class="topnav-right" >
+    <a *ngIf="(isLoggedIn$ | async) == false" (click)="onLogOut()"> Logout </a>
+  </div>
+  <div class="topnav-right" >
+    <a *ngIf="(isLoggedIn$ | async)" (click)="onLogOut()"> Login </a>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+{
+  "jobs": [
+    {
+      "id": 14,
+      "title": "Senior Developer .NET/C#",
+      "description": " To start your journey with us you’ll have: - At least 5 years of demonstrated expertise with C#, ASP.NET, MVC - Additional expertise in most of the following areas: JavaScript, AJAX, SQL Server, Git, CSS, HTML5, Sitecore Experience Platform - Excellent verbal and written communications skills in English are mandatory - Experience collaborating with a Project Management team and other Developers in a consulting environment - Experience estimating time required to complete modifications to projects",
+      "likes": 5,
+      "type": "Full-Time",
+      "category": "Sitecore"
+    },
+    {
+      "id": 15,
+      "title": "Front-End Developer (Angular/Ionic)",
+      "description": "For over 25 years billiton has been active as an internet development agency for clients in Europe. An innovative team of 25 employees is responsible for the development of in-house products and individual additional client projects.",
+      "likes": 0,
+      "type": "Remote",
+      "category": "Ilition"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "saitiselmin@gmail.com",
+      "role": "organization"
+    },
+    {
+      "id": 3,
+      "username": "user",
+      "password": "user",
+      "email": "selmin@gmail.com",
+      "role": "user"
+    }
+  ]
+}

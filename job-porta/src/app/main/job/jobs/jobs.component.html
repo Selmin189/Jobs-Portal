@@ -1,0 +1,14 @@
+<p>You had applied for:  {{ appliedJob?.title }}</p>
+<div class="create">
+  <button routerLink="/jobs/create">Create new</button>
+</div>
+<section>
+
+  <app-job-item *ngFor="let job of jobs"
+                [job]="job"
+                (jobDeleted)="onJobDelete($event)"
+                (jobClicked)="onMarkAsApplied($event)">
+  </app-job-item>
+
+
+</section>

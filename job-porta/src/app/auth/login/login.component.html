@@ -1,0 +1,45 @@
+<!--<div>-->
+<!--  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">-->
+<!--    <div>-->
+<!--      <input type="text"-->
+<!--             placeholder="Username"-->
+<!--             formControlName="username">-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--      <input type="password"-->
+<!--             placeholder="Password"-->
+<!--             formControlName="password">-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--      <button type="submit">Login</button>-->
+<!--    </div>-->
+<!--  </form>-->
+<!--</div>-->
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <h3>Login Here</h3>
+
+  <div>
+    <input type="text"
+           placeholder="Username"
+           formControlName="username">
+  </div>
+
+  <div>
+    <input type="password"
+           placeholder="Password"
+           formControlName="password">
+  </div>
+
+  <div>
+    <button type="submit">Login</button>
+  </div>
+  <div class="register">
+   <button [routerLink]="['/auth','register']">Register</button>
+  </div>
+</form>

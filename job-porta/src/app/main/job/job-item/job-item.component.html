@@ -1,0 +1,26 @@
+<div class="box">
+<article>
+  <h3>{{ job.title }}</h3>
+
+  <div class="description">
+    {{job.description}}
+  </div>
+
+  <div class="type">
+    {{job.type}}
+  </div>
+
+  <div class="company">
+    {{ job.category }}
+  </div>
+
+  <div class="three-inline-buttons">
+    {{job.likes}}
+    <button class="like" [disabled]="clicked$" (click)="onUpdate()">Like</button>
+    <button class="button-28" [routerLink]="['/jobs','edit', job.id]">Edit</button>
+    <button class="button-28" (click)="onClick()">Apply</button>
+    <button class="button-24" (click)="onDelete()">Delete</button>
+  </div>
+
+</article>
+</div>

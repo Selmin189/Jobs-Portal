@@ -1,0 +1,60 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form *ngIf="formGroup"
+      [formGroup]="formGroup" (ngSubmit)="onSubmit()" >
+  <h3>{{ job.id ? 'Update job' : 'Create new job'}}</h3>
+  <div>
+    <label for="title">Title</label>
+    <input type="text"
+           id="title"
+           formControlName="title">
+    <small *ngIf="titleFormControl?.touched && titleFormControl.invalid">
+    This field is required
+    </small>
+    <small *ngIf="titleFormControl?.touched && titleFormControl.invalid && titleFormControl.hasError('maxlength') ">
+      This field should contain max 5
+    </small>
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text"
+           id="description"
+           formControlName="description">
+
+    <small *ngIf="descriptionFormControl?.touched && descriptionFormControl?.invalid">
+      This field is required
+    </small>
+  </div>
+  <div>
+    <label for="likes">Likes</label>
+    <input type="number"
+           id="likes"
+           formControlName="likes">
+  </div>
+  <div>
+    <label for="type">Type</label>
+    <input type="text"
+           id="type"
+           formControlName="type">
+
+    <small *ngIf="typeFormControl?.touched && typeFormControl?.invalid">
+      This field is required
+    </small>
+
+  </div>
+  <div>
+    <label for="category">Category</label>
+    <input type="text"
+           id="category"
+           formControlName="category">
+    <small *ngIf="categoryFormControl?.touched && categoryFormControl?.invalid">
+      This field is required
+    </small>
+  </div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>
